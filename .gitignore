@@ -1,3 +1,4 @@
 static/css/*
 static/javascript/*
+static/*.html
 .sass-cache

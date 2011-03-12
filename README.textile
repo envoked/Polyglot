@@ -1,1 +1,11 @@
 h1. Polyglot
+
+Polyglot makes it easy to use HAML & SASS in projects where you can't use them directly. Simply clone the repo, run "rake: watch", place your haml/sass classes in source and Polyglot will automagically turn them into html/css in static.
+
+Javascript minification coming soon. 
+
+
+h2. Dependencies
+    **Haml/Sass** - http://haml-lang.com/
+    **FSSM** - https://github.com/ttilley/fssm
+    
