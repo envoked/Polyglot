@@ -1,13 +1,16 @@
 SRC  = "source"
-DEST = "static"
+DEST = "public"
 
 def rebuild_site(relative)
   extension = File.extname(relative)
   fileName  = File.basename(relative,extension)
   puts relative
-  if File.extname(relative) == ".sass"
+  case extension
+  when "sass", "scss"
     `sass #{SRC}/#{relative} #{DEST}/css/#{fileName}.css`
-  else
+  when "haml"
      `haml #{SRC}/#{relative} #{DEST}/#{fileName}.html --trace`
+  when "coffee"
+    `coffee --join main.js --compile #{SRC}/*.coffee`
   end
 end

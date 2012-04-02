@@ -1,6 +1,6 @@
 h1. Polyglot
 
-Polyglot makes it easy to use HAML & SASS in projects where you can't use them directly. Simply clone the repo, run "rake: watch", place your haml/sass files in the source directory and Polyglot will automagically turn them into html/css in the static directory.
+Polyglot makes it easy to use HAML,SASS, & Coffeescript in projects where you can't use them directly. Simply clone the repo, run "rake: watch", place your haml/sass files in the source directory and Polyglot will automagically turn them into html/css in the public directory.
 
 Javascript minification coming soon. 
 
@@ -8,4 +8,5 @@ Javascript minification coming soon.
 h2. Dependencies
     **Haml/Sass** - http://haml-lang.com/
     **FSSM** - https://github.com/ttilley/fssm
+    **CoffeeScript** - http://coffeescript.org/
     
